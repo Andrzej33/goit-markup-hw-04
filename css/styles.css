@@ -115,15 +115,29 @@ gap:50px;}
 }
 
 /* ------------HERO------------ */
-.hero {
-  background: var(--bkg-footer-color);
+.hero {background: var(--bkg-footer-color);
+  
 }
-.hero.section{
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image:url(../img/hero.jpg);
-  background-repeat: no-repeat;
- background-position: center;}
+
+
+ .overlay{
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  outline: 1px solid black;
+  background-image:linear-gradient(to right,
+      rgba(47, 48, 58, 0.4)),
+  
+   url("../img/hero.jpg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+      padding-bottom: 200px;
+      
+ }
 
 .hero-title {
     font-weight: 900;
