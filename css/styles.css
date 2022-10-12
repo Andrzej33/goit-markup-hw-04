@@ -115,29 +115,20 @@ gap:50px;}
 }
 
 /* ------------HERO------------ */
-.hero {background: var(--bkg-footer-color);
-  
-}
+.section.hero{background: var(--bkg-footer-color);
+  padding-top: 200px;
+    padding-bottom: 200px;
+  /* outline: 1px solid black;
+    background-image:linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+       url("../img/hero.jpg");
+        background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; */}
 
+ 
 
- .overlay{
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 600px;
-  outline: 1px solid black;
-  background-image:linear-gradient(to right,
-      rgba(47, 48, 58, 0.4)),
-  
-   url("../img/hero.jpg");
-  
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 200px;
-      padding-bottom: 200px;
-      
- }
+ 
 
 .hero-title {
     font-weight: 900;
@@ -321,9 +312,7 @@ main {
 }
 
 
-
 .filter-bt {
-  min-width: 125px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -350,22 +339,25 @@ justify-content: center;}
 .project-list{display: flex;
 flex-wrap: wrap;
 gap: 30px;
-margin-top: 34px;}
+margin-top: 50px;
+}
 
 .project-card{
   padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .project-item{
-border-left: 1px solid #EEEEEE;
-border-right: 1px solid #EEEEEE;
-border-bottom: 1px solid #EEEEEE; }
+
+  
+ }
 
 .project-item a {
   text-decoration: none;
-  width: calc((100%-60px) / 3);
- 
-}
+  flex-basis: calc((100%-60px)/3);
+  }
 .project-title {
   font-style: normal;
     font-size: 18px;
