@@ -196,6 +196,13 @@ height: 600px;}
 .benefits-item:not(:last-child)
 {margin-right: 30px;}
 
+.benefits-item::before{
+  display: block;
+  content:'' ;
+  height: 120px;
+  outline: 1px solid red;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
