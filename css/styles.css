@@ -102,16 +102,29 @@ gap:50px;}
 
 .header-mail,
 .header-tel {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+ align-items: center;
 }
+
+.envelop,.smartphone{
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+
+
 
 .header-contacts a:hover,
 .header-contacts a:focus {
   color: var(--accent-color);
+  fill: currentColor;
+  
 }
 
 /* ------------HERO------------ */
@@ -196,32 +209,22 @@ height: 600px;}
 .benefits-item:not(:last-child)
 {margin-right: 30px;}
 
-.benefits-item::before{
-  display: block;
-  content:'' ;
+.graphics{
+  display: flex;
+  background-color: var(--primary-bkg-bt-color);
   height: 120px;
-  outline: 1px solid red;
-  background: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 100px;
-  background-size: 70px;
   margin-bottom: 30px;
+  justify-content:center ;
+  border-radius: 4px;
+  align-items: center;
 }
 
-.antena::before {
-  background-image: url(../img/antenna.svg);
+.pic{
+  width: 70px;
+  height: 70px;
 }
 
-  .clock::before{background-image:
-     url(../img/clock.svg);}
 
-   .diagram::before{background-image:
-     url(../img/diagram.svg);
-  }  
-
-  .astronaut::before{background-image: 
-    url(../img/astronaut.svg);}
 
 .benefits-title {
   font-weight: 700;
@@ -281,6 +284,39 @@ gap: 30px;}
 
 .crew-card{padding-top: 30px;
 padding-bottom: 30px;}
+
+.social-list{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+   align-items: center;
+  }
+
+  .social-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .social-link:hover,
+    .social-link:focus{
+      background-color: var(--accent-color);
+    }
+
+.social-media{
+width: 20px;
+height: 20px;
+fill: var(--primary-text-color);
+}
+
+.social-media:hover,
+.social-media:focus{
+  fill: var(--primary-bkg-color);
+}
 
 .crew-member {
   font-weight: 500;
