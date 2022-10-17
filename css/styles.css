@@ -7,6 +7,7 @@
   --primary-bkg-bt-color: #f5f4fa;
   --primary-title-color: #212121;
   --bkg-footer-color: #2f303a;
+  --primary-logo-color:#AFB1B8;
 }
 
 p,h1,h2,h3,h4,h5,h6{margin: 0;}
@@ -301,23 +302,21 @@ padding-bottom: 30px;}
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    color:var(--primary-logo-color);
   }
 
     .social-link:hover,
     .social-link:focus{
       background-color: var(--accent-color);
+      color: var(--primary-bkg-color);
     }
 
 .social-media{
 width: 20px;
 height: 20px;
-fill: var(--primary-text-color);
+fill: currentColor;
 }
 
-.social-media:hover,
-.social-media:focus{
-  fill: var(--primary-bkg-color);
-}
 
 .crew-member {
   font-weight: 500;
@@ -360,18 +359,19 @@ fill: var(--primary-text-color);
 justify-content: center;
 align-items: center;
 border-radius: 4px;
+color:var(--primary-logo-color) ;
 }
 
 .clients-link:hover,
 .clients-link:focus{
   border-color: var(--accent-color);
-
+color: var(--accent-color);
 }
 
 .clients-item{
 width: 106px;
   height: 60px;
-fill: var(--primary-text-color);
+fill:currentColor
 }
 
 .clients-item:hover,
@@ -384,6 +384,9 @@ fill: var(--primary-text-color);
   background: var(--bkg-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.container.footer-container{
   display: flex;
 }
 .footer-item:not(:last-child) {
@@ -418,7 +421,16 @@ display: block;}
   color: var(--accent-color);
 }
 
-.footer-social{display: block;}
+.social-text{font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;}
+
+.footer-social{
+
+}
 
 /* ----------PORTFOLIO------------ */
 /* -------НАШІ ПРОПОЗИЦІЇ----------- */
