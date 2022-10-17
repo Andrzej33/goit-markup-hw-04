@@ -294,6 +294,7 @@ padding-bottom: 30px;}
   }
 
   .social-link{
+    display: block;
     display: flex;
     width: 44px;
     height: 44px;
@@ -335,11 +336,55 @@ fill: var(--primary-text-color);
   letter-spacing: 0.03em;
 }
 
+/* ----------CLIENTS------------ */
+
+.clients-title{
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+      color:var(--primary-title-color)
+}
+
+.clients-list{
+  display: flex;
+  gap: 30px;
+}
+
+.clients-link{
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: solid 1px #AFB1B8;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+  border-color: var(--accent-color);
+
+}
+
+.clients-item{
+width: 106px;
+  height: 60px;
+fill: var(--primary-text-color);
+}
+
+.clients-item:hover,
+.clients-item:focus{
+  fill: var(--accent-color);
+  }
+
 /* ----------FOOTER------------ */
 .footer {
   background: var(--bkg-footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -372,6 +417,8 @@ display: block;}
 .footer-tel:focus {
   color: var(--accent-color);
 }
+
+.footer-social{display: block;}
 
 /* ----------PORTFOLIO------------ */
 /* -------НАШІ ПРОПОЗИЦІЇ----------- */
