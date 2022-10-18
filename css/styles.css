@@ -129,11 +129,10 @@ gap:50px;}
 }
 
 /* ------------HERO------------ */
-.section.hero{background: var(--bkg-footer-color);
+.section.hero{background-color:#C4C4C4;
   padding-top: 200px;
     padding-bottom: 200px;
-  outline: 1px solid black;
-    background-image:linear-gradient(to right,
+      background-image:linear-gradient(
         rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
        url("../img/hero.jpg");
         background-repeat: no-repeat;
