@@ -294,7 +294,6 @@ padding-bottom: 30px;}
   }
 
   .social-link{
-    display: block;
     display: flex;
     width: 44px;
     height: 44px;
@@ -342,7 +341,9 @@ fill: currentColor;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-      color:var(--primary-title-color)
+      color:var(--primary-title-color);
+      padding-bottom: 50px;
+      
 }
 
 .clients-list{
@@ -366,10 +367,7 @@ fill: currentColor;
   fill: var(--primary-logo-color);
   }
 
-  /* .clients-logo{
-    fill: currentColor;
-  } */
-
+  
 .clients-link:hover,
 .clients-link:focus{
   border-color: var(--accent-color);
@@ -387,6 +385,7 @@ fill: var(--accent-color);
 
 .container.footer-container{
   display: flex;
+  align-items: baseline;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
@@ -427,9 +426,26 @@ display: block;}
   text-transform: uppercase;
   color: #FFFFFF;}
 
-.footer-social{
+  .social-link.socials{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-bkg-color);
+         }
 
+  .social-link.socials:hover,
+  .social-link.socials:focus {
+   background-color: var(--accent-color);
+  color: var(--primary-bkg-color);
+  }
+
+  
+.footer-social{
+  margin-left:70px;
+ 
+  display: flex;
+  flex-direction: column;
 }
+
+
 
 /* ----------PORTFOLIO------------ */
 /* -------НАШІ ПРОПОЗИЦІЇ----------- */
@@ -456,6 +472,7 @@ main {
 .filter-bt:focus {
   color: var(--primary-bkg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter-list{display: flex;
@@ -475,9 +492,11 @@ margin-top: 50px;
     border-bottom: 1px solid #EEEEEE;
 }
 
+.project-item:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
-
-.project-item a {
+.project-link {
   text-decoration: none;
   flex-basis: calc((100%-60px)/3);
   }
