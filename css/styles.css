@@ -113,7 +113,6 @@ gap:50px;}
 }
 
 .envelop,.smartphone{
-  display: block;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -219,7 +218,7 @@ height: 600px;}
   align-items: center;
 }
 
-.pic{
+.benefits-icon{
   width: 70px;
   height: 70px;
 }
@@ -255,16 +254,16 @@ padding-bottom: 94px;}
 .work-list{display: flex;
 gap: 30px;}
 .work-item{width: calc((100%-60px) / 3);}
-.work-title,
-.crew-title {
+
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-}
+  color: var(--primary-title-color);
+margin-bottom: 50px;}
+
 /* ----------CREW------------ */
 .crew {
   background: var(--primary-bkg-bt-color);
@@ -310,8 +309,6 @@ padding-bottom: 30px;}
     }
 
 .social-media{
-width: 20px;
-height: 20px;
 fill: currentColor;
 }
 
@@ -335,16 +332,7 @@ fill: currentColor;
 
 /* ----------CLIENTS------------ */
 
-.clients-title{
-  font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-      color:var(--primary-title-color);
-      padding-bottom: 50px;
-      
-}
+  
 
 .clients-list{
   display: flex;
@@ -352,7 +340,7 @@ fill: currentColor;
 }
 
 .clients-item{
-    width: calc((100%-150px)/6);
+    width: calc((100% - 150px) / 6);
   height: 92px;
   }
 
@@ -364,16 +352,19 @@ fill: currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--primary-logo-color);
+  color: var(--primary-logo-color);
   }
 
   
 .clients-link:hover,
 .clients-link:focus{
   border-color: var(--accent-color);
-fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
+.clients-logo{
+  fill: currentColor;
+}
 
 
 /* ----------FOOTER------------ */
@@ -492,14 +483,17 @@ margin-top: 50px;
     border-bottom: 1px solid #EEEEEE;
 }
 
-.project-item:hover{
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .project-link {
+  display: block;
   text-decoration: none;
-  flex-basis: calc((100%-60px)/3);
+  flex-basis: calc((100% - 60px) / 3);
   }
+
+    .project-link:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
 .project-title {
   font-style: normal;
     font-size: 18px;
